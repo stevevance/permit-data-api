@@ -1,0 +1,37 @@
+// Include required modules.
+var express = require('express');
+var bodyParser = require('body-parser');
+
+// include routes and utilities
+var config = require('./config').config;
+var utils = require('./lib/utils');
+var api = require('./lib/api');
+
+// Start express app.
+var app = express();
+app.use(bodyParser());
+app.listen(config.port);
+
+// Serve static assets.
+app.use(express.static(__dirname + '/public'));
+
+// Require jurisdiction ID.
+app.use(function(req, res, next) {
+  if(!req.query.jurisdiction_id) {
+  	res.status(403).json({message: 'You must use a jurisdiction ID.'});
+  }
+  else {
+  	res.jurisdiction_id = req.query.jurisdiction_id;
+	next();
+  }
+});
+
+// Set routes
+app.use('/api', api);
+
+// Handle errors.
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.status(403).json({message: err.message, error: err});
+});
+
