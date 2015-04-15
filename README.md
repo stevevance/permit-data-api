@@ -31,6 +31,8 @@ http://openpermit.cloudapp.net/api/
 |  jurisdiction_id | true  | 
 | limit | false |
 
+Sample call: http://openpermit.cloudapp.net/api/permits/?jurisdiction_id=alameda-0ad8aa80-e1cb&limit=1
+
 
 * **Get Permit**
 * Description: Retrieves a specific permit record details.
@@ -41,6 +43,8 @@ http://openpermit.cloudapp.net/api/
 |---|---|
 | jurisdiction_id | true  | 
 | permitnum | true |
+
+Sample call: http://openpermit.cloudapp.net/api/permits/CB15-0157/?jurisdiction_id=alameda-0ad8aa80-e1cb
 
 
 * **Get Permit Timeline**
@@ -53,6 +57,8 @@ http://openpermit.cloudapp.net/api/
 |  jurisdiction_id | true  | 
 | permitnum | true |
 
+Sample call: http://openpermit.cloudapp.net/api/permits/CB15-0157/timeline/?jurisdiction_id=alameda-0ad8aa80-e1cb
+
 
 * **Get Permit Inspections**
 * Description: Retrieves the inspections for a specific permit.
@@ -63,6 +69,8 @@ http://openpermit.cloudapp.net/api/
 |---|---|
 |  jurisdiction_id | true  | 
 | permitnum | true |
+
+Sample call: http://openpermit.cloudapp.net/api/permits/CB14-0683/inspections/?jurisdiction_id=alameda-0ad8aa80-e1cb
 
 
 * **Get Permit Contractors**
@@ -75,6 +83,8 @@ http://openpermit.cloudapp.net/api/
 |  jurisdiction_id | true  |  
 | permitnum | true |
 
+Sample call: http://openpermit.cloudapp.net/api/permits/B15-0153/contractors/?jurisdiction_id=alameda-0ad8aa80-e1cb
+
 
 * **Get Inspections**
 * Description: Retreives a list of inspections.
@@ -85,6 +95,8 @@ http://openpermit.cloudapp.net/api/
 |---|---|
 |  jurisdiction_id | true |
 | limit | false | 
+
+Sample call: http://openpermit.cloudapp.net/api/inspections?jurisdiction_id=deschutes_co-5b133ecf-43e2&limit=1
 
 
 * **Get Inpsection**
@@ -97,6 +109,8 @@ http://openpermit.cloudapp.net/api/
 |  jurisdiction_id | true  | 
 | inspectionid | true |
 
+Sample call: http://openpermit.cloudapp.net/api/inspections/1860194/?jurisdiction_id=deschutes_co-5b133ecf-43e2
+
 
 * **Get Contractors**
 * Description: Retrieves a list of contractors.
@@ -108,6 +122,8 @@ http://openpermit.cloudapp.net/api/
 |  jurisdiction_id | true  | 
 | limit | false | 
 
+Sample call: http://openpermit.cloudapp.net/api/contractors/?jurisdiction_id=deschutes_co-5b133ecf-43e2&limit=1
+
 
 * **Get Contractor**
 * Description: Retrieves details for a specific contractor
@@ -118,3 +134,5 @@ http://openpermit.cloudapp.net/api/
 |---|---|
 |  jurisdiction_id | true |
 | contractorid | true |
+
+Sample call: http://openpermit.cloudapp.net/api/contractors/76888/?jurisdiction_id=deschutes_co-5b133ecf-43e2
