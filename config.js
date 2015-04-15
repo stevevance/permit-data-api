@@ -6,7 +6,7 @@ exports.config = config = {
 	var LIMIT: process.argv[3] || 25,
 
 	// CKAN API base.
-	vat CKAN_API_BASE: 'http://www.civicdata.com/api/action/datastore_search_sql?sql=',
+	var CKAN_API_BASE: 'http://www.civicdata.com/api/action/datastore_search_sql?sql=',
 
 	// Resource IDs.
 	var PERMITS: "03b30af0-1ef8-4b6c-bc59-859fd8e19e5c",
