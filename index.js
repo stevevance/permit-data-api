@@ -10,20 +10,23 @@ var api = require('./lib/api');
 // Start express app.
 var app = express();
 app.use(bodyParser());
-app.listen(config.port);
+app.listen(config.PORT);
 
 // Serve static assets.
 app.use(express.static(__dirname + '/public'));
 
 // Require jurisdiction ID.
 app.use(function(req, res, next) {
-  if(!req.query.jurisdiction_id) {
-  	res.status(403).json({message: 'You must use a jurisdiction ID.'});
-  }
-  else {
-  	res.jurisdiction_id = req.query.jurisdiction_id;
+	if(req.path == '/api/jurisdictions') {
+		next();
+	}
+	else if(!req.query.jurisdiction_id) {
+		res.status(403).json({message: 'You must use a jurisdiction ID.'});
+	}
+	else {
+		res.jurisdiction_id = req.query.jurisdiction_id;
 	next();
-  }
+	}
 });
 
 // Set routes
