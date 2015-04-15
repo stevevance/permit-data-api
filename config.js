@@ -14,14 +14,14 @@ exports.config = config = {
 
 	JURISDICTIONS: 
 	{
-		"alameda-0ad8aa80-e1cb": 
+		"deschutes_co-5b133ecf-43e2": 
 		{
 			PERMITS: "03b30af0-1ef8-4b6c-bc59-859fd8e19e5c",
 			PERMIT_HISTORY: "87f54b3e-07ad-4595-b78f-e748071d6f18",
 			INSPECTIONS: "f40902f2-3f3e-4aa2-9326-0f88d6d07ae4",
 			CONTRACTORS: "5aed9714-8798-4948-9e58-c8a76d5fae61"
 		},
-		"deschutes_co-5b133ecf-43e2": 
+		"alameda-0ad8aa80-e1cb": 
 		{
 			PERMITS: "f148b5d2-b278-40ba-8ca4-945031d5994c",
 			PERMIT_HISTORY: "c4993843-ddd6-4bcb-a75f-885e34381d7f",
