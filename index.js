@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 		next();
 	}
 	else if(!req.query.jurisdiction_id) {
-		res.status(403).json({message: 'You must use a jurisdiction ID.'});
+		res.status(403).json({message: 'You must use a jurisdiction ID. A list of jurisdiction IDs can be found at /jurisdictions'});
 	}
 	else {
 		res.jurisdiction_id = req.query.jurisdiction_id;

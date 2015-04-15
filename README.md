@@ -2,6 +2,10 @@
 
 A RESTful API for permit information using the BLDS data format.
 
+## Base URL
+
+http://openpermit.cloudapp.net/api/
+
 ## API Methods
 
 * **Get Jurisdictions**
