@@ -16,7 +16,7 @@ exports.config = config = {
 	{
 		"deschutes_co-5b133ecf-43e2": 
 		{
-			PERMITS: "a056c32d-c4c0-493d-8a83-e330c84af62c",
+			PERMITS: "2ee2ca8f-d75a-486c-a192-2e2f76b1235b",
 			PERMIT_HISTORY: "87f54b3e-07ad-4595-b78f-e748071d6f18",
 			INSPECTIONS: "f40902f2-3f3e-4aa2-9326-0f88d6d07ae4",
 			CONTRACTORS: "5aed9714-8798-4948-9e58-c8a76d5fae61"
